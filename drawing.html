@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body {
+                background-color: black
+            }
+            .big-circle {
+                background-color: white;
+                border-radius: 300px;
+                height: 500px;
+                width: 500px;
+                position: absolute;
+                left: 500px;
+                bottom: 200px
+            }
+            .small-circle1 {
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                border-radius: 100px;
+                position: absolute;
+                left: 600px;
+                z-index: 2;
+                bottom: 450px
+            }
+            .small-circle2 {
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                border-radius: 100px;
+                position: absolute;
+                left: 780px;
+                z-index: 2;
+                bottom: 450px
+            }
+            .triangle {
+                top: 120px;
+                position: absolute;
+                right: 605px;
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 200px solid #EDCA6C;
+                z-index: -1;
+                transform: rotate(35deg);
+            }
+            .triangle-down {
+                position: absolute;
+                top: 500px;
+                left: 690px;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid black;
+                z-index: 5;
+            }
+            .smile {
+                position: absolute;
+                z-index: 5;
+                transform: rotate(45deg);
+                width:300px;
+                height: 300px;
+                border-radius: 50%;
+                box-shadow: 20px 20px 0 0 red;
+                top: 400px;
+                left: 600px;
+            }
+            .trapezoid {
+                position: absolute;
+                top: 270px;
+                right: 630px;
+                border-bottom: 100px solid #EDCA6C;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                height: 0;
+                width: 250px;
+                transform: rotate(40deg);
+            }
+            .name {
+                position: absolute;
+                font-size: 40px;
+                color: red;
+                top: 40px;
+            }
+            .box{
+                width:300px; height:100px;  
+                border:solid 10px red;
+                border-color:red transparent transparent transparent;
+                border-radius: 90%/220px 220px 0 0;
+                transform: rotate(180deg);
+                top: 580px;
+                left: 590px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="name">Jack In The Box</div>
+        <div class="big-circle"></div>
+        <div class="small-circle1"></div>
+        <div class="small-circle2"></div>
+        <div class="triangle"></div>
+        <div class="triangle-down"></div>
+        <div class="box"></div>
+        <div class="trapezoid"></div>
+    </body>
+</html>
